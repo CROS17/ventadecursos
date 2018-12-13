@@ -1,0 +1,140 @@
+#navbar {
+	display: none;
+	width: 10%;
+	margin-top: 15px;
+	float: right;
+}
+.menubtn {
+	text-align: right !important;
+	z-index: 9995;
+	color: #274a61;
+	text-decoration: none;
+	font-size: 0em;
+	line-height: 0em;
+	top: 2px;
+	margin-top: 1%;
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url('menu_line.png') top left no-repeat !important;
+	transition: 0.3s ease-in-out;
+}
+.menubtn:hover, .openmenu .menubtn {
+	color: #bdd43e;
+	background: url('menu_line.png') top right no-repeat !important;
+	transition: 0.3s ease-in-out;
+}
+#pgcontainer {
+	padding: 45px 0;
+	margin: 0;
+}
+.overlay {
+	display: block;
+	position: fixed;
+	z-index: 9990;
+	background: rgba(0,0,0,0.7);
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin-left: -250px;
+	margin-top: -100px;
+}
+.openmenu .overlay {
+	top: 0;
+}
+#hamburgermenu {
+	height: 100%;
+	width: 0;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9998;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-bottom-right-radius: 15px;
+}
+#hamburgermenu::-webkit-scrollbar {
+    width: 0px;
+}
+#hamburgermenu ul {
+	height:auto;
+	z-index: 101;
+	display: block;
+	margin: 90px 0 10px 40px;
+}
+/**/
+#hamburgermenu ul ul{
+	display:none;
+	position: relative;
+	top:0px;
+	left:0;
+	margin:0px 0 10px 20px;
+}
+#hamburgermenu ul ul ul{
+	display:none;
+}
+/**/
+#hamburgermenu ul li {
+	position: relative;
+	display: block;
+}
+#hamburgermenu ul li:hover ul {
+	display: block;
+}
+#hamburgermenu ul li.social_zone {
+	width: 100%;
+}
+#hamburgermenu ul li a.display {
+	display: block;
+	padding: 10px 0 10px;
+}
+#hamburgermenu ul ul ul li a {
+    line-height: 1.2;
+    transition: linear 0.4s;
+	margin-bottom:11px;
+}
+#hamburgermenu ul ul li a.display {
+	display: block;
+	padding: 5px 0 ;
+}
+#hamburgermenu ul ul li:last-child a.display {
+	padding: 5px 0 0px;
+}
+#hamburgermenu ul li a {
+	display: inline-block;
+	line-height: 2;
+	color:#d2cdcd;
+	font-size: 0.9em;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	transition: linear 0.4s;
+}
+#hamburgermenu ul li a.active {
+	color:#fff;
+}
+#hamburgermenu ul li a img {
+	display: inline-block;
+	padding: 10px 0;
+	margin-right: 30px;
+	height: 20px;
+}
+#hamburgermenu li a:hover {
+	color: #F00;
+	transition: linear 0.4s;
+}
+#hamburgermenu li:hover {
+	background: #000;
+}
+ @media(max-width:950px) {
+#navbar {
+	display: block;
+}
+#header .content #nav {
+	display: none;
+}
+#header .content a .vpi_logo {
+	background:rgba(0,0,0,0.7);
+}
+}
